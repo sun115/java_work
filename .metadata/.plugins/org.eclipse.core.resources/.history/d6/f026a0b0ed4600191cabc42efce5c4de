@@ -1,0 +1,25 @@
+
+import java.util.Random;
+
+public class NumberChecker {
+	public static void main(String[] args) {
+		Random ran1 = new Random();
+		
+		int no1 = ran1.nextInt(999);
+		int no2 = ran1.nextInt(999);
+		
+		System.out.println("랜덤 숫자 1 : " + no1);
+		System.out.println("랜덤 숫자 2 : " + no2);
+		// System.out.println("나머지 : " + (no1 % 2));
+		
+		if (no1 % 2 == 1) {
+			System.out.println("홀수입니다.");
+		} else {
+			System.out.println("짝수입니다.");
+		}
+		
+	}
+
+
+	
+}

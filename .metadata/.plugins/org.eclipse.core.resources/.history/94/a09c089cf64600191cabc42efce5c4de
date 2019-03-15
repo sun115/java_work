@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class RockSissiorPaper {
+	public static void main(String[] args) {
+		
+		Random rsp = new Random();
+		
+		int com = rsp.nextInt(2);
+		int me = rsp.nextInt(2);
+		System.out.println(com);
+		System.out.println(me);
+		
+		// 가위 = 0, 바위 = 1, 보 = 2
+		// 
+		if (com == me) {
+			System.out.println("무승부");
+		} else if (com==0 && me==1 ) {
+			System.out.println("이김ㅋ");
+		} else if (com==0 && me==2) {
+			System.out.println("졌다..");
+		} else if (com==1 && me==0) {
+			System.out.println("졌다..");
+		} else if (com==1 && me==2) {
+			System.out.println("이김ㅋ");
+		} else if (com==2 && me==0) {
+			System.out.println("이김ㅋ");
+		} else if (com==2 && me==0) {
+			System.out.println("졌다..");
+		}
+	
+
+}
+}

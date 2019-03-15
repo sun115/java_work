@@ -1,0 +1,14 @@
+
+public class MyProject {
+	public static void main(String[] args) {
+		int a = 10;
+		short b = 3;
+		b = (short)a;
+		System.out.println(b);
+		
+		short c = 10;
+		int d'
+		d = c;
+	}
+
+}
