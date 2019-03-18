@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.Random;
 
 public class for_01 {
 	public static void main(String[] args) {
@@ -7,29 +8,46 @@ public class for_01 {
 		int score2;
 		int score3;
 		
+//		ì§ì ‘ ì ìˆ˜ ì…ë ¥í•˜ê¸°
 		Scanner scan = new Scanner(System.in);
-		System.out.println("±¹¾îÁ¡¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+		System.out.println("êµ­ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		score1 = scan.nextInt();
 		score2 = scan.nextInt();
 		score3 = scan.nextInt();
 
+//		ì ìˆ˜ë“¤ì„ í•˜ë‚˜ì˜ ë³€ìˆ˜ì— ë„£ê¸°
 		int[] scores = new int[] {score1, score2, score3};
-		System.out.println("\n²ÃÂîºÎÅÍ Ãâ·Â\n");
+		System.out.println("\nê¼´ì°Œë¶€í„° ì¶œë ¥\n");
 		Arrays.sort(scores);
 		for (int a: scores) {
 			System.out.println(a);}
 		
-		System.out.println("\n ±¹¾îÁ¡¼öÀÇ ÃÑÁ¡Àº ");
+		System.out.println("\nêµ­ì–´ì ìˆ˜ì˜ ì´ì ì€ ");
 		int sum;
 		sum = 0;
 		for(int i = 0; i < scores.length; i++) {
 			sum += scores[i];}
 		System.out.println(sum);
 		
-		System.out.println("\n ±¹¾îÁ¡¼öÀÇ Æò±ÕÀº ");
+		System.out.println("\nêµ­ì–´ì ìˆ˜ì˜ í‰ê· ì€ ");
 		double average;
-		average = 0F;
+		average = 0;
 		average = sum / scores.length;
 		System.out.println(average);
+
+//		ë¨ë¤ ì ìˆ˜ ì…ë ¥ë°›ê¸°
+//		Random rand = new Random();
+//		
+//		int totalScore = 0;
+//		for (int i = 0; i < 3; i++) {
+//			int randNumber = rand.nextInt(101);
+//			System.out.println("êµ­ì–´ì ìˆ˜ : " + randNumber);
+//			totalScore = totalScore + randNumber;}
+//		System.out.println("\nì´ì ì€ " + totalScore + "ì…ë‹ˆë‹¤.");
+//		
+//		double average;
+//		average = (double)totalScore / 3;
+//		System.out.println("\ní‰ê· ì€ " + average + "ì…ë‹ˆë‹¤.");
+//		
 }
 }
