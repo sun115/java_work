@@ -3,12 +3,12 @@
 //			public static void main(String[] args) {
 //				Random r = new Random();
 //				int randomValue = r.nextInt(982);
-//				System.out.println("ÀÓÀÇÀÇ °ªÀº : ");
+//				System.out.println("ì„ì˜ì˜ ê°’ì€ : ");
 //				System.out.println(randomValue);
 //				
 //				int nVal;
 //				nVal = randomValue%2;
-//				System.out.println("³ª¸ÓÁö °ªÀº : ");
+//				System.out.println("ë‚˜ë¨¸ì§€ ê°’ì€ : ");
 //				System.out.println(nVal);
 
 import java.util.Random;
@@ -20,19 +20,19 @@ public class NumberChecker {
 		int no1 = ran1.nextInt(999);
 		int no2 = ran1.nextInt(999);
 		
-		System.out.println("·£´ı ¼ıÀÚ 1 : " + no1);
-		System.out.println("·£´ı ¼ıÀÚ 2 : " + no2);
-		// System.out.println("³ª¸ÓÁö : " + (no1 % 2));
+		System.out.println("ëœë¤ ìˆ«ì 1 : " + no1);
+		System.out.println("ëœë¤ ìˆ«ì 2 : " + no2);
+		// System.out.println("ë‚˜ë¨¸ì§€ : " + (no1 % 2));
 		
 		if (no1 % 2 == 1) {
-			System.out.println(no1 + " Àº(´Â) È¦¼öÀÔ´Ï´Ù.");
+			System.out.println(no1 + " ì€(ëŠ”) í™€ìˆ˜ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(no1 + " Àº(´Â) Â¦¼öÀÔ´Ï´Ù.");
+			System.out.println(no1 + " ì€(ëŠ”) ì§ìˆ˜ì…ë‹ˆë‹¤.");
 		}
 		if (no2 % 2 == 1) {
-			System.out.println(no2 + " Àº(´Â) È¦¼öÀÔ´Ï´Ù.");
+			System.out.println(no2 + " ì€(ëŠ”) í™€ìˆ˜ì…ë‹ˆë‹¤.");
 		} else {
-			System.out.println(no2 + " Àº(´Â) Â¦¼öÀÔ´Ï´Ù.");
+			System.out.println(no2 + " ì€(ëŠ”) ì§ìˆ˜ì…ë‹ˆë‹¤.");
 		}
 		
 	}

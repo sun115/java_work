@@ -1,19 +1,19 @@
 import java.util.Random;
 import java.util.Scanner;
 
-// ÇÑ±Û·Î ´äÀ» ÀÔ·ÂÇØµµ µ¹¾Æ°¡µµ·Ï ÇØ º¸ÀÚ!
+// í•œê¸€ë¡œ ë‹µì„ ì…ë ¥í•´ë„ ëŒì•„ê°€ë„ë¡ í•´ ë³´ì!
 
 public class RCP_test {
 	public static void main(String[] args) {
 		
 		Scanner inputFromUser = new Scanner(System.in);
-		System.out.println("°¡À§, ¹ÙÀ§, º¸ Áß¿¡ ¼±ÅÃÇÏ¼¼¿ä.");
+		System.out.println("ê°€ìœ„, ë°”ìœ„, ë³´ ì¤‘ì— ì„ íƒí•˜ì„¸ìš”.");
 		
 		Random caseCom = new Random();
 		int computerChoice = caseCom.nextInt(3);
 		
 		String inputText = inputFromUser.nextLine();
-		if(inputText.equals("°¡À§")) {
+		if(inputText.equals("ê°€ìœ„")) {
 			
 			}
 	

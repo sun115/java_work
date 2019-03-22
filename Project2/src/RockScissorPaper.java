@@ -5,38 +5,38 @@ public class RockScissorPaper {
 	public static void main(String[] args) {
 		
 		while (true) {
-//	³»°¡ ³¾ ¼ıÀÚ ¼±ÅÃ
+//	ë‚´ê°€ ë‚¼ ìˆ«ì ì„ íƒ
 		Scanner scan = new Scanner(System.in);
-		System.out.println("°¡À§¹ÙÀ§º¸¸¦ ÇØ º¸¼¼¿ä. \n °¡À§´Â 0, ¹ÙÀ§´Â 1, º¸´Â 2 ÀÔ´Ï´Ù.");
+		System.out.println("ê°€ìœ„ë°”ìœ„ë³´ë¥¼ í•´ ë³´ì„¸ìš”. \n ê°€ìœ„ëŠ” 0, ë°”ìœ„ëŠ” 1, ë³´ëŠ” 2 ì…ë‹ˆë‹¤.");
 		int me = scan.nextInt();
 		
 		
-// ??	¸¸¾à »ç¿ëÀÚ°¡ 3 ÀÌ»óÀÇ ¼ıÀÚ¸¦ ¾´´Ù¸é, ¿À·ù ÇØ°á¹ıÀº?  *hint : for¹®
+// ??	ë§Œì•½ ì‚¬ìš©ìê°€ 3 ì´ìƒì˜ ìˆ«ìë¥¼ ì“´ë‹¤ë©´, ì˜¤ë¥˜ í•´ê²°ë²•ì€?  *hint : forë¬¸
 //		if (me > 3) {
-//			System.out.println("0ºÎÅÍ 2±îÁöÀÇ ¼ıÀÚ¸¸ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.");
-//		} else { //µÚÀÇ ÀüÃ¼ÄÚµå
+//			System.out.println("0ë¶€í„° 2ê¹Œì§€ì˜ ìˆ«ìë§Œ ì…ë ¥í•´ ì£¼ì„¸ìš”.");
+//		} else { //ë’¤ì˜ ì „ì²´ì½”ë“œ
 //		
 		
 		
-//	ÄÄÇ»ÅÍ°¡ ³¾ ·£´ı ¼ıÀÚ ½ÇÇà
+//	ì»´í“¨í„°ê°€ ë‚¼ ëœë¤ ìˆ«ì ì‹¤í–‰
 		Random rsp = new Random();
 		int com = rsp.nextInt(3);
 		
-//	³»°¡ ³½ ¼ıÀÚ¸¦ ÇÑ±Û·Î ¹Ù²Ù±â
+//	ë‚´ê°€ ë‚¸ ìˆ«ìë¥¼ í•œê¸€ë¡œ ë°”ê¾¸ê¸°
 //		if (me==0) {
-//			System.out.println("³ª : °¡À§");}
+//			System.out.println("ë‚˜ : ê°€ìœ„");}
 //		else if (me==1) {
-//			System.out.println("³ª : ¹ÙÀ§");}
-//		else if (me==2) {System.out.println("³ª : º¸");}
-//		else {System.out.println("0¿¡¼­ 2±îÁöÀÇ ¼ıÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä");}
+//			System.out.println("ë‚˜ : ë°”ìœ„");}
+//		else if (me==2) {System.out.println("ë‚˜ : ë³´");}
+//		else {System.out.println("0ì—ì„œ 2ê¹Œì§€ì˜ ìˆ«ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”");}
 		
-//	ÄÄÇ»ÅÍ°¡ ³½ ¼ıÀÚ¸¦ ÇÑ±Û·Î ¹Ù²Ù±â		
+//	ì»´í“¨í„°ê°€ ë‚¸ ìˆ«ìë¥¼ í•œê¸€ë¡œ ë°”ê¾¸ê¸°		
 //		if (com==0) {
-//			System.out.println("ÄÄ  : °¡À§");}
+//			System.out.println("ì»´  : ê°€ìœ„");}
 //		else if (com==1) {
-//			System.out.println("ÄÄ : ¹ÙÀ§");}
-//		else if (com==2) {System.out.println("ÄÄ : º¸");}
-//		else {System.out.println("0¿¡¼­ 2±îÁöÀÇ ¼ıÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä");}
+//			System.out.println("ì»´ : ë°”ìœ„");}
+//		else if (com==2) {System.out.println("ì»´ : ë³´");}
+//		else {System.out.println("0ì—ì„œ 2ê¹Œì§€ì˜ ìˆ«ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”");}
 //		
 		
 		if (com == me) {
@@ -53,7 +53,7 @@ public class RockScissorPaper {
 			System.out.println("WIN");
 		} else if (com==2 && me==0) {
 			System.out.println("LOSE");
-		} else {System.out.println("0¿¡¼­ 2±îÁöÀÇ ¼ıÀÚ¸¸ ÀÔ·ÂÇØÁÖ¼¼¿ä.\n");
+		} else {System.out.println("0ì—ì„œ 2ê¹Œì§€ì˜ ìˆ«ìë§Œ ì…ë ¥í•´ì£¼ì„¸ìš”.\n");
 		}
 	//	}
 		

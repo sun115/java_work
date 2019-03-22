@@ -12,7 +12,7 @@ public class for_01 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("국어점수를 입력해주세요.");
 		score1 = scan.nextInt();
-		score2 = scan.nextInt();
+		score2 = scan.nextInt(); 
 		score3 = scan.nextInt();
 
 //		점수들을 하나의 변수에 넣기
