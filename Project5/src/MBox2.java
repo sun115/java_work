@@ -2,29 +2,32 @@ import java.util.Scanner;
 
 public class MBox2 {
 	private int coin = 0;
-	public String name;
-	Scanner scan = new Scanner(System.in);
-	int inputcoin = scan.nextInt();
+	public String message = null;
+	
+	int inputcoin;
 //	String message = scan.nextLine();
 	
 //	@SuppressWarnings("unused")
-	public void deposit(int inputcoin) {
-		
-	}
-	public void deposit(int coin, String message) {
+//	public void deposit(String message) {
+//		Scanner scan = new Scanner(System.in);
+//		this.inputcoin = scan.nextInt();
+//		System.out.println(inputcoin + "딸그랑");
+//	}
+	public void deposit() {
 		
 		while (true) {
+			Scanner scan = new Scanner(System.in);
 			System.out.println("입금할 금액을 입력하세요.\n필요하다면 메세지를 같이 입력하세요.");
-			int inputcoin = scan.nextInt();
-			String message = scan.nextLine();
+			this.inputcoin = scan.nextInt();
+			this.message = scan.nextLine();
 			this.coin = this.coin + inputcoin;
 			
-			if (message != null) {
+			if (message.equals("\r\n")) {
 				System.out.println(inputcoin + message);
 			} else if (message.equals("crash")) {
 				System.out.println(this.coin + "시스템이 종료됩니다.");
 				break;
-			} else if (message.equals(null)) {
+			} else {
 				System.out.println(inputcoin + "딸그랑");
 			}
 		}

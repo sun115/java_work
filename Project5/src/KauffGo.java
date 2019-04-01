@@ -6,3 +6,4 @@ public class KauffGo {
 		check.kauff();
 	} 
 }
+ 
