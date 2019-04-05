@@ -9,19 +9,19 @@ public class Practice_calculate {
 		boolean e;
 		
 		c = a != b; 
-		// c = (a¿Í b°¡ ´Ù¸¥°¡? yes=true, no=false)
+		// c = (aì™€ bê°€ ë‹¤ë¥¸ê°€? yes=true, no=false)
 		System.out.println(c);
 		
 		d = (a != b) && (a > b);
-		// d = (a¿Íb°¡ ´Ù¸¥°¡?) ±×¸®°í (a´Âbº¸´Ù Å«°¡?) both yes=true, ÇÏ³ª¶óµµ no=false
+		// d = (aì™€bê°€ ë‹¤ë¥¸ê°€?) ê·¸ë¦¬ê³  (aëŠ”bë³´ë‹¤ í°ê°€?) both yes=true, í•˜ë‚˜ë¼ë„ no=false
 		System.out.println(d);
 		
 		if (a < b) {
-			System.out.println(a + "ÀÌ(°¡) " + b + "º¸´Ù ÀÛ´Ù.");
+			System.out.println(a + "ì´(ê°€) " + b + "ë³´ë‹¤ ì‘ë‹¤.");
 		} else if (a == b) {
-			System.out.println(a + "¿Í " + b + "´Â °°´Ù.");
+			System.out.println(a + "ì™€ " + b + "ëŠ” ê°™ë‹¤.");
 		} else {
-			System.out.println(a + "ÀÌ(°¡) " + b + "º¸´Ù Å©´Ù.");
+			System.out.println(a + "ì´(ê°€) " + b + "ë³´ë‹¤ í¬ë‹¤.");
 		}
 		
 	}

@@ -15,16 +15,16 @@ public class MyProject {
 		int number1 = 10;
 		int number2 = 3;
 		double resultNumber = (double)number1 / (double)number2;
-		// ³ª´©±â ¿¬»êÀº ºĞ¸ğ ºĞÀÚ Áß ÇÑÂÊ¸¸ ½Ç ¼ö Ã³¸®ÇØµµ ½Ç ¼ö·Î ¿¬»êµÊ.
+		// ë‚˜ëˆ„ê¸° ì—°ì‚°ì€ ë¶„ëª¨ ë¶„ì ì¤‘ í•œìª½ë§Œ ì‹¤ ìˆ˜ ì²˜ë¦¬í•´ë„ ì‹¤ ìˆ˜ë¡œ ì—°ì‚°ë¨.
 		System.out.println(resultNumber);
 		
 		int e = 10;
 		System.out.println(e++);
-		// ÀÏ´Ü e¸¦ printÇÏ°í eÀÇ °ªÀ» 1up
+		// ì¼ë‹¨ eë¥¼ printí•˜ê³  eì˜ ê°’ì„ 1up
 		System.out.println(++e);
-		// 1upÇÑ e(11) ¿¡¼­ ´Ù½Ã 1upÇÑ °ªÀ» print
+		// 1upí•œ e(11) ì—ì„œ ë‹¤ì‹œ 1upí•œ ê°’ì„ print
 		
-		// Á» ´õ Á¤È®ÇÏ°Ô ÄÚµùÇÏ±â
+		// ì¢€ ë” ì •í™•í•˜ê²Œ ì½”ë”©í•˜ê¸°
 		int f = 10;
 		f++;
 		System.out.println(f);
