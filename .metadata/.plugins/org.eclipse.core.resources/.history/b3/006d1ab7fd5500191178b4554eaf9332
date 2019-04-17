@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class PowGo {
+	public static void main(String[] args) {
+		Pow check = new Pow();
+		check.change();
+//		System.out.println();
+	}
+
+}

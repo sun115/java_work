@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Pow {
+	int inputNum;
+	
+	public void change() {
+		Scanner scan = new Scanner(System.in);
+		int inputNum = 0;
+		this.inputNum = scan.nextInt();
+		
+		String 나머지 = null;
+		int 몫 = 0;
+		
+//		int index = 0;
+//		String[] arr = new String[index];
+		
+		while(true) {
+			
+			
+			if(this.inputNum>=8) {
+				나머지 = Integer.toString(this.inputNum%8);
+				나머지 += 나머지;
+				System.out.print(나머지);
+				
+//				arr[index] = 나머지;
+//				index += 1;
+				
+				몫 = this.inputNum/8;
+				this.inputNum = 몫;
+			} else {
+				String inputStr = Integer.toString(this.inputNum);
+				System.out.println(inputStr);
+				
+//				arr[index] = inputStr;
+				break;
+			}	
+		}
+//		System.out.println(arr);
+		// 배열에 넣기
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+import java.util.Random;
+
+public class Enemy {
+	String name = "";
+	int hp = 0;
+	
+	public boolean status() {
+			if (hp > 0) {
+				// 살앗다
+				return true;
+			}
+			// 죽엇다
+			return false;
+		}
+		
+		public void attack() {
+			Random rand = new Random();
+			int hitNumber = rand.nextInt(10);
+			if (hitNumber == 5) {
+				hp = hp - 10;
+				System.out.println("적 : 아프거든? (-10)");
+			} else {
+				System.out.println("적 :쇼쇼쇽");
+			}
+		}
+
+}

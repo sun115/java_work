@@ -1,0 +1,3 @@
+windows -> preferences
+¿ÞÂÊÅÇ General -> Workspace
+Text file encoding À» other : utf-8À¸·Î º¯°æ

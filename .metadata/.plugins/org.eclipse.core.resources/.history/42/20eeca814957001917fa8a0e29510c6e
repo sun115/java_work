@@ -1,0 +1,58 @@
+import java.util.Scanner;
+
+public class Game01 {
+	public static void main(String[] args) {
+		Player player = new Player("폴",100);
+		
+		Enemy[] enemy = new Enemy[5];
+		enemy[0] = new Enemy("잡1",100);
+		enemy[1] = new Enemy("잡2",100);
+		enemy[2] = new Enemy("잡3",100);
+		enemy[3] = new Enemy("잡4",100);
+		enemy[4] = new Enemy("잡5",100);
+//		player.hp = 100;
+//		e1.hp = 100;
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("엔터를 누르면 턴이 진행됩니다.");
+		for (int i=0; i<10000; i++) {
+			scanner.nextLine();
+			
+			for(int j=0; j<enemy.length; j++) {
+//				enemy[j].beUnderAttack();
+				if (enemy[j].status()) {
+					enemy[j].beUnderAttack();
+				}
+			}
+			boolean noneDefeat = false;
+
+			for (int j=0; j<enemy.length; j++) {
+				if(enemy[j].status()){
+					noneDefeat = true;
+				}
+			}
+			if (!noneDefeat) {
+				System.out.println("적 전멸. WIN");
+				break;
+			}
+			
+//			e1.beUnderAttack();
+//			if (e1.status()) {
+//				
+//			}else {
+//				System.out.println("적이 파괴되엇읍니다. 승 리 ! ^^");
+//			}
+						
+			
+			player.beUnderAttack();
+			if (player.status()) {
+				
+			} else {
+				System.out.println("당신은 패배했다.");
+			}
+			
+			
+		}
+	}
+
+}

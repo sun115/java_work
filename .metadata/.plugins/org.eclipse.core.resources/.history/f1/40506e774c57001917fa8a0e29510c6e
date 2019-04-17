@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class Player {
+	String name = "";
+	int hp = 0;
+	Player(String name, int hp){
+		this.name = name;
+		this.hp = hp;
+	}
+	
+	public boolean status() {
+		if (hp > 0) {
+			// 살앗다
+			return true;
+		}
+		// 죽엇다
+		return false;
+	}
+	
+	public void beUnderAttack() {
+		Random rand = new Random();
+		int hitNumber = rand.nextInt(10);
+		// 100분의 1의 확률로 공격받게 해보자
+		if (hitNumber == 9) {
+			hp = hp - 10;
+			System.out.println(this.name + " : 아야! (-10)");
+		} else {
+			System.out.println(this.name + " : 슈슉");
+		}
+		
+	}
+
+}
