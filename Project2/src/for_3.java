@@ -18,9 +18,9 @@ public class for_3 {
 		oddsum = 0;
 		for(int a = 0; a < 101; a++)
 			if (a%2 == 1) {
-				 
+			oddsum += a;
 			}
-		oddsum += a;
+		
 		System.out.println(oddsum);
 		
 		
