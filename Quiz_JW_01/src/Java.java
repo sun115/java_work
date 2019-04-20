@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Java extends Subject{
+ public class Java extends Subject{
 	private int meScore;
 	private int feScore;
 	private int[] qScore = new int[3];
