@@ -27,7 +27,7 @@ public class GugudanRun {
 		// 메인에 throws Exception 했을 때 - 강제 예외처리가 필요할 경우
 //		Gugudan2 gugu2 = new Gugudan2();
 //		gugu2.gugu();
-		
+		 
 		
 		// ???????? 어쩌라고 ? .... 자동생성되는거 보라고,,
 		java.io.File file = new java.io.File("C:\\file.txt");

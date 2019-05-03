@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class StudentRun03 {
@@ -18,7 +19,7 @@ public class StudentRun03 {
 			arr[i].kor = rand.nextInt(101);
 			arr[i].eng = rand.nextInt(101);
 			arr[i].math = rand.nextInt(101);
-		}
+		} // //여기까진 무조건 꼭 알아야함!!!!!!!! 상속객체에 값 넣기
 		
 		// 총점 for문 돌리기
 		for (int i = 0; i < arr.length; i++) {
@@ -35,6 +36,7 @@ public class StudentRun03 {
 				}
 			}
 		}
+		
 		
 		
 		// 출력하기
