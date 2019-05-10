@@ -1,3 +1,5 @@
+// 실패
+
 import java.util.Scanner;
 
 public class MBox2Go {
@@ -8,3 +10,4 @@ public class MBox2Go {
 	}
 
 }
+

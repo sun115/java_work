@@ -1,0 +1,8 @@
+
+public class PF_Person {
+	String name;
+	PF_Person(String name){
+		this.name = name;
+	}
+
+}

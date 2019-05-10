@@ -8,29 +8,17 @@ public class Subject extends Student implements GradeManage <Subject>{
 	double[] quizScores = new double[3];
 	
 	double ranking;
-	
-	Java java = new Java();
-	Python python = new Python();
-	DB db = new DB();
-	
-	
-	// 학생정보 배열에 데이터를 추가하는 메소드
-//	@Override
-//	public Object SubjectInfo() {
-//		// TODO Auto-generated method stub
-//		Random rand = new Random();	
-//		
-//		for (int i = 0; i < student.length; i++) {
-//			this.student[i] += this.javaAvg;
-//			this.student[i] += this.pythonAvg;
-//			this.student[i] += this.dbAvg;
-//			this.student[i] += this.attendance;
-//		}
-//		return student;
-//	}
+
 
 	@Override
 	public void setAvg() {
+		Java java = new Java();
+		Python python = new Python();
+		DB db = new DB();
+		java.javaExam();
+		python.pythonExam();
+		db.DBExam();
+		
 		// TODO Auto-generated method stub
 		double sumsum1 = 0;
 		double sumsum2 = 0;

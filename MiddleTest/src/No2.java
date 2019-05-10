@@ -37,6 +37,6 @@ public class No2 {
 		No2 cal = new No2();
 		cal.calculation();
 		System.out.println(cal.print());
-		
+
 	}
 }

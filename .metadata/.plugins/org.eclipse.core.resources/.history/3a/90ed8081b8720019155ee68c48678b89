@@ -1,0 +1,12 @@
+
+public class PF_Run {
+	public static void main(String[] args) {
+		String[] names = {"짱구","영희","철수"};
+		PF_Person[] players = new PF_Person[names.length];
+		for (int i = 0; i < names.length; i++) {
+			players[i] = new PF_Person(names[i]);
+		}
+		System.out.println(players[5].name);
+	}
+
+}

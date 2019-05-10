@@ -1,0 +1,9 @@
+
+public class PlayerVO {
+	private String name;
+	private String position;
+	private int regYear;
+	
+	public 
+
+}

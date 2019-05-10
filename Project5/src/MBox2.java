@@ -1,58 +1,44 @@
+// 실패
+
+import java.math.BigInteger;
 import java.util.Scanner;
+
+import javax.swing.text.html.HTMLEditorKit.Parser;
 
 public class MBox2 {
 	private int coin = 0;
 	public String message = null;
 	
 	int inputcoin;
-//	String message = scan.nextLine();
-	
-//	@SuppressWarnings("unused")
-//	public void deposit(String message) {
-//		Scanner scan = new Scanner(System.in);
-//		this.inputcoin = scan.nextInt();
-//		System.out.println(inputcoin + "딸그랑");
-//	}
+
 	public void deposit() {
 		
 		while (true) {
 			Scanner scan = new Scanner(System.in);
-			System.out.println("입금할 금액을 입력하세요.\n필요하다면 메세지를 같이 입력하세요.");
+			System.out.println("\n입금할 금액을 입력하세요. 필요하다면 메세지를 같이 입력하세요.\n종료시 crash를 입력하세요.");
 			this.inputcoin = scan.nextInt();
 			this.message = scan.nextLine();
-			this.coin = this.coin + inputcoin;
+			this.coin = this.coin + this.inputcoin;
 			
-			if (message.equals("\r\n")) {
+			String ipcoin = Integer.toString(this.inputcoin);
+			if (message.equals("")) {
+				System.out.println(inputcoin + "딸그랑");
+			} else if (message != "") {
 				System.out.println(inputcoin + message);
-			} else if (message.equals("crash")) {
+			} else {
 				System.out.println(this.coin + "시스템이 종료됩니다.");
 				break;
-			} else {
-				System.out.println(inputcoin + "딸그랑");
-			}
 		}
 
 	}
+	}
 }
+
+	
+
 	
 	
 	
-	
-//	public void deposit1(int inputCoin) {
-//		this.totalCoin = inputCoin;
-//		System.err.println("딸그랑");
-//	}
-//	
-//	public void deposit2(String name, int inputCoin) {
-//		this.name = name;
-//		this.totalCoin = inputCoin;
-//	}
-//	public void bye(String name) {
-//		this.name = "crash";
-//		System.out.println("총 액수 : " + totalCoin);
-//		totalCoin = 0;
-//		System.out.println("프로그램을 종료합니다.");
-//	}
 	
 
 

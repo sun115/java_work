@@ -9,15 +9,15 @@ public class StudentRun {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = new Student();
 		}
-		
+
 		for (int i = 0; i < arr.length; i++) {
-			arr[i].name = (i+1)+ "번 학생 ";
+			arr[i].name = (i + 1) + "번 학생 ";
 			arr[i].doTest();
 		}
-		
+
 		System.out.println("성적이 오른 학생은?\n");
 		for (int i = 0; i < arr.length; i++) {
-			if(arr[i].midAvg<arr[i].finAvg) {
+			if (arr[i].midAvg < arr[i].finAvg) {
 				System.out.println(arr[i].print());
 			}
 		}

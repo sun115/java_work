@@ -14,7 +14,8 @@ public class division {
 			result = (double)inputNum1 / inputNum2;
 //			result = Double.parseDouble(String.format("%.2f",temp));
 //			System.out.println(inputNum1 + " 나누기 " + inputNum2 + " = " + result + "입니다.");
-			System.out.printf("\n%d 나누기 %d 는 %.2f 입니다.", inputNum1, inputNum2, result);
+			System.out.printf("\n%d 나누기 %d  은(는) %.2f 입니다.", inputNum1, inputNum2, result);
+			System.out.println("\n");
 		}
 	}
 }

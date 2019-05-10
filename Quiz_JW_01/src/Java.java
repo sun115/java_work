@@ -11,9 +11,9 @@ import java.util.Random;
 
 	public void javaExam() {
 		this.meScore = rand.nextInt(101);
-		this.midScores[0] = this.meScore;
+		super.midScores[0] = this.meScore;
 		this.feScore = rand.nextInt(101);
-		this.finalScores[0] = this.feScore;
+		super.finalScores[0] = this.feScore;
 	}
 	
 	

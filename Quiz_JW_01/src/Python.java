@@ -10,9 +10,9 @@ public class Python extends Subject{
 	Random rand = new Random();
 	public void pythonExam() {
 		this.meScore = rand.nextInt(101);
-		this.midScores[0] = this.meScore;
+		this.midScores[1] = this.meScore;
 		this.feScore = rand.nextInt(101);
-		this.finalScores[0] = this.feScore;
+		this.finalScores[1] = this.feScore;
 	}
 	
 	public void pythonQuiz() {

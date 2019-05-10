@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\SUN\P_Java\PJS"/>
+		<item value="C:\SUN\P_Java\PvE"/>
+		<item value="C:\SUN\KKTalk\Test36"/>
+		<item value="C:\SUN\P_Java\교수님\190405\Game4"/>
 		<item value="C:\SUN\KKT\Test36"/>
 		<item value="C:\SUN\P_Java\Project7"/>
 		<item value="C:\SUN\P_Java"/>
 		<item value="C:\SUN\P_Java\Project6"/>
 	</list>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="401" key="DIALOG_HEIGHT"/>
+		<item value="1030" key="DIALOG_X_ORIGIN"/>
+		<item value="433" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="NewWizardAction">
 		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">

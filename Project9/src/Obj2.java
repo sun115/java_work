@@ -2,7 +2,7 @@
 public class Obj2 {
 	int name = 1;
 	Obj2(){
-		System.out.println("123123");
+		System.out.println("안녕하세요");
 	}
 	
 	@Override

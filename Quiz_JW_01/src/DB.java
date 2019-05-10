@@ -12,9 +12,9 @@ public class DB extends Subject{
 	// 시험정보
 	public void DBExam() {
 		this.meScore = rand.nextInt(101);
-		this.midScores[0] = this.meScore;
+		this.midScores[2] = this.meScore;
 		this.feScore = rand.nextInt(101);
-		this.finalScores[0] = this.feScore;
+		this.finalScores[2] = this.feScore;
 	}
 	
 	public void DBQuiz() {

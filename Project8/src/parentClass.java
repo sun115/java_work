@@ -1,3 +1,4 @@
+// 추상클래스 사용해보기
 
 public abstract class parentClass {
 	

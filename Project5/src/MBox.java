@@ -1,8 +1,8 @@
 
 public class MBox {
-	public int totalCoin = 0;
+	public int totalCoin;
 	public String name;
-	private String name2; // 프리베잇은 외부수정불가. 내부에서만 접근가능. 외부에서는 메소드만을 통해 가능.
+	private String name2; // 프라이빗은 외부수정불가. 내부에서만 접근가능. 외부에서는 메소드만을 통해 가능.
 	
 	public void setName(String name) {
 		this.name = name;
@@ -11,11 +11,12 @@ public class MBox {
 	}
 	
 	public void deposit(int inputCoin) {
-		this.totalCoin = totalCoin + inputCoin;
+		this.totalCoin = this.totalCoin + inputCoin;
+		System.out.println(name + "잔액 : " + this.totalCoin);
 	}
 	
-	public void withdraw() {
-		System.out.println(name + "출금액 : " + totalCoin);
+	public void withdraw(int outCoin) {
+		System.out.println(name + "출금액 : " + outCoin + " / 잔액 : "+(this.totalCoin-outCoin));
 		totalCoin = 0;
 	}
 	
