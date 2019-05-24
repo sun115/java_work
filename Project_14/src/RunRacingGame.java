@@ -14,14 +14,15 @@ public class RunRacingGame {
 		RacingGame[] horses = new RacingGame[names.length];
 		
 		for (int i = 0; i < names.length; i++) {
-			horses[i] = new RacingGame(names[i]);
+			horses[i] = new RacingGame(names[i], horses, 0, 100);
 		}
 		// 순서 설정
-		Random rand = new Random();
-		int tmp = rand.nextInt(6)+5;
-		for (int i = 0; i < horses.length; i++) {
-			horses[i].readyRacing(horses[i], tmp, 0, 100);
-		}
+//		Random rand = new Random();
+//		int tmp = rand.nextInt(6)+5;
+//		for (int i = 0; i < horses.length; i++) {
+//			horses[i].readyRacing(horses, 0, 100);
+//		}
+		horses[0].goRacing();
 	}
 	 
 

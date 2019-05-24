@@ -16,27 +16,35 @@ public class RacingGame {
 	int now;
 	
 	
-	public RacingGame(String name) {
+	public RacingGame(String name, RacingGame[] horses, int srtPoint, int endPoint) {
 		this.name = name;
-	}
-	
-	public void readyRacing(RacingGame[] horses, int distance, int srtPoint, int endPoint) {
 		this.horses = horses;
 		Random rand = new Random();
 		this.distance = rand.nextInt(6)+5;
 		this.srtPoint = srtPoint;
 		this.endPoint = endPoint;
 	}
-	
+	//	
+//	public void readyRacing(RacingGame[] horses, int srtPoint, int endPoint) {
+//		this.horses = horses;
+//		Random rand = new Random();
+//		this.distance = rand.nextInt(6)+5;
+//		this.srtPoint = srtPoint;
+//		this.endPoint = endPoint;
+//	}
+//	
 	public void goRacing() {
 		int previousDistance = srtPoint;
 		for (int i = 0; i < horses.length; i++) {
-			this.now = this.horses[i].distance + previousDistance;
+			this.now =  previousDistance + this.horses[i].distance;
 			if (this.now < this.endPoint) {
 				this.horses[i].goRacing();
+			} else {
+				System.out.println(horses[i].name + " GOAL~!~!~!! ");
+				break;
 			}
+			previousDistance = this.now;
 		}
-		
 	}
 	
 //	public void gameStart() {
