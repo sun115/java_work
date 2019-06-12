@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<item value="JavaSE-1.8" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<item value="C:\SUN\P_Java\kopoAwtProject" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="C:\SUN\P_Spring" key="org.eclipse.jdt.ui.last.external.project"/>
 	<section name="RefactoringWizard.preview">
 		<item value="600" key="width"/>
 		<item value="400" key="height"/>
