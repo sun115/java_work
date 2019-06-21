@@ -1,0 +1,10 @@
+package com.pjs.web;
+
+@Controller
+public class HelloController {
+
+  @RequestMapping("/hello")
+  public @ResponseBody String hello() {
+    return "Hello, Spring Boot!";
+  }
+}

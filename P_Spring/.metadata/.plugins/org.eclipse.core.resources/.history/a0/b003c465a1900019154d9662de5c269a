@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!doctype html>
+<html lang="ko">
+
+<head>
+<title>rune</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/join.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="join_content">
+      <div class="logo_sec">
+        <h3>íì ê°ì</h3>
+      </div>
+      <form class="join_sec" action="do_join">
+        <label>ìì´ë</label>
+        <input type="text" placeholder="ìì´ë" required="required" id="id" />
+        <label>í¨ì¤ìë</label>
+        <input type="password" placeholder="ë¹ë°ë²í¸" required="required" id="password" />
+        <label>ì´ë¦</label>
+        <input type="text" placeholder="ì´ë¦" required="required"" />
+        <input type="submit" class="join_btn" value="ê°ì" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

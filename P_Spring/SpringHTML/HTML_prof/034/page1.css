@@ -1,0 +1,17 @@
+p{
+	width: 300px;
+}
+
+.hide{
+	height: 0px;
+	overflow: hidden; 
+}
+
+.b2{
+	background: #ffff00;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 5px 5px 5px #000000;
+	width: 100px;
+	font-size: 0.9em;
+}

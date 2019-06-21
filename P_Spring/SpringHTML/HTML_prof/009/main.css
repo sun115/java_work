@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 3000px;
+	font-size: 12px;
+}
+
+p{
+	text-align: justify;
+	font-family: "µ∏øÚ", "Dotum di", "πŸ≈¡", Batang;
+	font-size: 2em;
+	font-style: normal;
+}
+
+p{
+	width: 113px;
+	height: 96px;
+	background: url(img/m2.jpg) left top no-repeat;
+	text-indent: -9999px;
+}

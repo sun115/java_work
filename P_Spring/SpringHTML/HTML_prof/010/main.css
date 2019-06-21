@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 3000px;
+	font-size: 12px;
+}
+
+p{
+	text-align: justify;
+	font-family: "µ∏øÚ", "Dotum di", "πŸ≈¡", Batang;
+	font-size: 2em;
+	font-style: normal;
+	line-height: 2em;
+	letter-spacing: -5px;
+	word-spacing: 20px;
+	color: #ff0000;	
+}
+

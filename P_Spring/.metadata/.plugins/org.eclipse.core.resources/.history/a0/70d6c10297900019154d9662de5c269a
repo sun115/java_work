@@ -1,0 +1,147 @@
+package com.wow.battle;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class HomeController {
+	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home(Locale locale, Model model) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		model.addAttribute("select_result", dbCommon.selectDataTableTag(new Player()));
+		
+		return "list";
+
+	}
+	
+	@RequestMapping(value = "/input", method = RequestMethod.GET)
+	public String input(Locale locale, Model model) {
+		
+		return "input";
+	}
+	
+	@RequestMapping(value = "/input_data", method = RequestMethod.GET)
+	public String input_data(Locale locale, Model model, @RequestParam("name") String name,
+			@RequestParam("attack") String attack,
+			@RequestParam("shield") String shield,
+			@RequestParam("att_prob") String att_prob,
+			@RequestParam("shld_prob") String shld_prob,
+			@RequestParam("hp") String hp) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		dbCommon.insertData(new Player(name, attack, shield, att_prob, shld_prob, hp));
+		
+		return "list";
+	}
+	
+	@RequestMapping(value = "/modify", method = RequestMethod.GET)
+	public String modify(Locale locale, Model model, @RequestParam("idx") int idx) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		model.addAllAttributes(dbCommon.detailsData(new Player(), idx));
+		
+		return "modify";
+	}
+	
+	@RequestMapping(value = "/modify_data", method = RequestMethod.GET)
+	public String modify_data(Locale locale, Model model, @RequestParam("idx") int idx, 
+			@RequestParam("name") String name,
+			@RequestParam("attack") String attack,
+			@RequestParam("shield") String shield,
+			@RequestParam("att_prob") String att_prob,
+			@RequestParam("shld_prob") String shld_prob,
+			@RequestParam("hp") String hp
+			) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		dbCommon.updateData(new Player(name, attack, shield, att_prob, shld_prob, hp), idx);
+		
+		return "done";
+	}
+	
+	@RequestMapping(value = "/delete", method = RequestMethod.GET)
+	public String delete(Locale locale, Model model,  @RequestParam("idx") int idx) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		dbCommon.deleteData(new Player(), idx);
+		
+		return "done";
+	}
+	
+	@RequestMapping(value = "/game_start", method = RequestMethod.GET)
+	public String battle(Locale locale, Model model, @RequestParam(value="chk_info", required=true) List<Integer> values ) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		
+		int idx1 = values.get(0);
+		int idx2 = values.get(1);
+		
+		dbCommon.detailsData(new Player(), idx1);
+		dbCommon.detailsData(new Player(), idx2);
+		
+		HashMap<String, String> test = new HashMap<String, String>();
+		HashMap<String, String> test2 = new HashMap<String, String>();
+		test = dbCommon.detailsData(new Player(), idx1);
+		test2 = dbCommon.detailsData(new Player(), idx2);
+		
+		model.addAttribute("selected_user_1", dbCommon.selectDataTableTag2(new Player(), idx1));
+		model.addAttribute("selected_user_2", dbCommon.selectDataTableTag2(new Player(), idx2));
+		
+		DBCommon<Player> dbCommon2 = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "PvP");
+		dbCommon2.insertData(new Player(test.get("name"),test.get("attack"),test.get("shield"),
+				test.get("att_prob"),test.get("shld_prob"),test.get("hp")));
+		dbCommon2.insertData(new Player(test2.get("name"),test2.get("attack"),test2.get("shield"),
+				test2.get("att_prob"),test2.get("shld_prob"),test2.get("hp")));
+		
+		return "battle";
+	}
+	
+	@RequestMapping(value = "/PvP", method = RequestMethod.GET)
+	public String PvP(Locale locale, Model model, @RequestParam("name") String name) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "PvP");
+		
+		
+		return "battle";
+	}
+	
+//	@RequestMapping(value = "/done", method = RequestMethod.GET)
+//	public String done(Locale locale, Model model, @RequestParam("idx") int idx, 
+//			@RequestParam("name") String name, 
+//			@RequestParam("attack") String attack, 
+//			@RequestParam("shield") String shield,
+//			@RequestParam("att_prob") String att_prob,
+//			@RequestParam("shld_prob") String shld_prob,
+//			@RequestParam("hp") String hp,
+//			@RequestParam("game") int game,
+//			@RequestParam("win") int win,
+//			@RequestParam("lose") int lose,
+//			@RequestParam("result") boolean result) {
+//		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+//		
+////		String name, String attack, String shield, String att_prob, String shld_prob, String hp, String game, String win, String lose
+//		
+//		dbCommon.updateResultData(new Player(name, attack, shield, att_prob, shld_prob, hp, game, win, lose), idx, result);
+//		
+//		return "done";
+//	}
+	
+	@RequestMapping(value = "/temp", method = RequestMethod.GET)
+	public String temp(Locale locale, Model model) {
+		
+		return "list";
+	}
+	
+	@RequestMapping(value = "/create_table", method = RequestMethod.GET)
+	public String createTable(Locale locale, Model model) {
+		DBCommon<Player> dbCommon = new DBCommon<Player>("c:\\tomcat\\player.sqlite", "player");
+		dbCommon.createTable(new Player());
+		return "done";
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;application.properties&apos; to &apos;gs-consuming-rest-complete&apos;&#x0D;&#x0A;- Original project: &apos;gs-rest-service-complete&apos;&#x0D;&#x0A;- Destination element: &apos;gs-consuming-rest-complete&apos;&#x0D;&#x0A;- Original element: &apos;application.properties&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=gs-consuming-rest-complete" element1="application.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1560152045864" units="0" version="1.0"/>
+</session>

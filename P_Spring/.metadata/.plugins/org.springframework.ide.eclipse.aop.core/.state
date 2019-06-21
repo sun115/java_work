@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="Spring03"/>
+<aop-project name="SignIn"/>
+<aop-project name="BattleGame"/>
+<aop-project name="Game"/>
+<aop-project name="prof_Student"/>
+<aop-project name="SignIn02"/>
+</aop-reference-model>

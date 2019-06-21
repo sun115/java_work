@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kopo.git.dao.GitMapper">
+
+
+
+	<select id="selectGitList" resultType="Git">
+		select a.userid, a.name, b.gitid, b.gitaddress from users a left join users_git b on a.userid = b.userid
+	</select>
+		
+	<insert id="insertGit" parameterType="Git">
+		insert into users_git values(#{userId},#{gitId},#{gitAddress} )
+	</insert>
+	
+</mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

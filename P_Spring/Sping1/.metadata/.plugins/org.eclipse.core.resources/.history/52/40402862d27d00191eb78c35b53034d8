@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+a {padding: 5px 30px; background: #ddd; color: #fff; border-radius: 5px;}
+</style>
+</head>
+<body>
+	입력되었습니다.
+	<a href="/spring01/">입력화면으로 가기</a>
+</body>
+</html>
